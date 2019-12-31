@@ -1,0 +1,425 @@
+@charset "utf-8";
+/* ==========================================================================
+   1. CSS Reset Code
+   ========================================================================== */
+
+/* 1.1. Eric Meyers Reset
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   ========================================================================== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
+ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  font-family: "Signika", sans-serif;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* Force scrollbar */
+html { overflow-y: scroll; }
+
+/* Align radios and text inputs with their label */
+
+input[type='radio'] { vertical-align: text-bottom; }
+
+/* Hand cursor on clickable input elements */
+label,
+input[type='button'],
+input[type='submit'],
+button {
+  cursor: pointer;
+}
+
+strong {
+  font-weight: bold;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+em { font-style: italic; }
+
+img {
+  width: 100%;
+  border: 0;
+  vertical-align: middle;
+}
+
+sub,
+sup {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 55%;
+  line-height: 0;
+}
+
+sup { top: -.7em; }
+sub { bottom: -.25em; }
+
+/* 1.2. Clear Fix
+   ========================== */
+
+.cf:before,
+.cf:after {
+  display: table;
+  content: " ";
+}
+
+.cf:after { clear: both; }
+.cf { *zoom: 1; }
+
+/*for all*/
+body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+a { 
+  display: inline-block;
+  text-decoration: none; 
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+/*for wrapper*/
+.wrapper {
+  max-width: 1360px;
+  width: 100%; 
+  margin: 0 auto;
+}
+/*=================================
+  Header styling starts here
+=================================*/
+header{
+  height: 40px;
+  
+}
+.logo{
+  float: left;
+  text-align: center;
+  margin: 10px;
+}
+.menu{
+  float: right;
+  text-align: center;
+  margin: 10px;
+}
+.menu span{
+  padding:5px;
+}
+
+
+/*=================================
+  Header styling ends here
+=================================*/  
+
+/*=================================
+  main styling starts here
+=================================*/
+
+/*=================================
+  Banner styling starts here
+=================================*/
+.Banner{
+  height: 630px;
+  background-image: url('https://via.placeholder.com/1300x610');
+  background-size: cover;
+  position: relative;
+  width: 100%;
+}
+.banner-head{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
+  text-align: center;
+  height: 250px;
+  color: #fff;
+}
+.Banner h1{
+  font-size: 3.5rem;
+  font-weight: 700;
+  padding-bottom: 50px;
+}
+.Banner p{
+  font-size: 1.3rem;
+  padding-bottom: 40px;
+  line-height: 1.5rem;
+}
+.Banner a{
+  border:1px solid #fff;
+  padding: 10px;
+  color: #fff;
+  font-size: 1.5rem;
+}
+/*=================================
+  Banner styling ends here
+=================================*/
+
+/*=================================
+  Gallery styling starts here
+=================================*/ 
+
+.Gallery{
+  padding: 7rem 0px;
+  padding-bottom: 11rem;
+  height: 450px;
+  color: #c1c7cd;
+  background:#062038;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+.gallery-head h2{
+  font-size: 2rem;
+  font-weight: 700;
+  padding-bottom: 1.5rem;
+}
+.gallery-head{
+  z-index: 1000;
+  padding-bottom: 2rem;
+  height:80px;
+}
+.Boxes{
+  display: flex;
+  justify-content: center;
+  padding:0px 4rem;
+}
+.Box1{
+  
+  z-index: 1000;
+  padding:0px 1rem;
+}
+.Box2{
+
+  z-index: 1000;
+  padding: 0px 1rem;
+}
+.Boxes span{
+  background-color: #30414b;
+  padding: 2rem 0px;
+  position: inherit;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+}
+
+ /*=================================
+  Gallery styling ends here
+=================================*/ 
+
+/*=================================
+  Video-Gallery styling starts here
+=================================*/ 
+.video-gallery{
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+  color: #fff;
+  background: #1a2934;
+}
+.gallery-head1 h2{
+  font-size: 2rem;
+  font-weight: 700;
+  padding-bottom: 2rem;
+}
+.gallery-head1  {
+  z-index: 1000;
+  padding-bottom: 4rem;
+  height: 90px;
+  padding-left: 4rem;
+  max-width: 589px;
+}
+
+aside{
+  display: flex;
+  padding: 0px 3rem;
+}
+.categories{
+  margin-top: 10px;
+  max-width: 240px;
+}
+.Vid-Boxes{
+  max-width:945px;
+  padding-left: 1rem;
+}
+.Vid-Boxes1{
+  display: flex;
+}
+.Vid-Boxes2{
+  display: flex;
+}
+.Box{
+  max-width: 295px;
+  padding: 1rem;
+}
+.cat-active{
+  background: #5b5bdc;
+}
+.cat{
+  background: #29383f;
+}
+.category{
+  box-sizing: border-box;
+  margin:0.5rem;
+  padding: 0.5rem;
+  border-radius:4px;
+}
+
+
+
+ /*=================================
+  Video-Gallery styling ends here
+=================================*/ 
+
+/*=================================
+  Gallery2 styling starts here
+=================================*/ 
+
+.Gallery2{
+  padding: 7rem 0px;
+  padding-bottom: 8.5rem;
+  height: 450px;
+  color: #c1c7cd;
+  background:#242b2c;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+.gallery-head2 h2{
+  font-size: 2.25rem;
+  font-weight: 700;
+  padding-bottom: 2rem;
+}
+.gallery-head2{
+  z-index: 1000;
+  padding-bottom: 3rem;
+  height:100px;
+}
+.Boxes{
+  display: flex;
+  height: 325px;
+  justify-content: center;
+  padding:0px 4rem;
+}
+.Box1{
+  
+  z-index: 1000;
+  padding: 1rem;
+}
+.Box2{
+
+  z-index: 1000;
+  padding: 1rem;
+}
+.Box3{
+
+  z-index: 1000;
+  padding: 1rem;
+}
+.Boxes span{
+  box-sizing: border-box;
+  background-color: #32393a;
+  padding: 2rem 1rem;
+  text-align: left;
+  line-height: 1.7;
+  width: 100%;
+}
+
+ /*=================================
+  Gallery2 styling ends here
+=================================*/
+
+/*=================================
+  main styling ends here
+=================================*/
+
+/*=================================
+  footer styling starts here
+=================================*/ 
+.footer{
+  padding:0px 4rem;
+  padding-bottom:4rem;
+  padding-top: 7rem;
+  background: #020b13;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+}
+.Services{
+  padding-bottom: 11rem;
+}
+.Services h3{
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-top: 6rem;
+  padding-bottom: 2.2rem;
+}
+.Services-Boxes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.5rem;
+  text-align: left; 
+  padding: 2rem 0px; 
+}
+.serve{
+  width: 40rem;
+}
+.serve li{
+  padding-bottom: 1rem;
+}
+.serve .border{
+  box-sizing: border-box;
+  padding-top: 0.8rem;
+  width: 90%;
+  border-top: 0.2px solid #546d71;
+}
+.serve li a,.copyright a{
+  font-size: 0.9rem;
+  color: #c1c7cd;
+}
+.copyright p{
+  font-size: 0.9rem;
+  color:#546d71;
+}
+.icons{
+  padding-bottom: 1rem;
+  font-size: 2rem;
+}
+.icons a{
+ font-size: 1.5rem;
+}
+
+
+ /*=================================
+  footer styling ends here
+=================================*/ 
+
+/*media query starts*/
+/*media query for 995px starts here*/
+@media only screen and (max-width: 995px) {
+
+
+
+}  
